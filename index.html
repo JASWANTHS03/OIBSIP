@@ -1,96 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tribute Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="./global-communication.png">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Todo List</title>
+	<link rel="stylesheet" href="todo.css" />
+	
 </head>
-<body>
-    
-    <div class="wrapper">
-        <div class="container">
-            <div class="heading">
-                <h1 class="main-heading">
-                    VIRAT KOHLI
-                </h1>
-                <p class="sub-heading">THE MODERN KING OF CRICKET</p>
-            </div>
-            <div class="para">
-                <div class="para-left">
-                    <p>Virat Kohli is an Indian international cricketer and the former captain of the Indian national cricket team who plays as a right-handed batsman for Royal Challengers Bangalore in the IPL and for the Delhi in Indian domestic cricket. Widely regarded as one of the greatest batsmen of all time.Kohli's batting style and approach to the game have frequently drawn comparisons to the legendary Sachin Tendulkar,Kohli invested in Indian Super League club FC Goa, which he co-owned as of 2014, reflects his ambition to support and cultivate the growth of football in India.</p>
-                </div>
-                <div class="para-right">
-                    <img src="virat.jpeg" alt="" class="img" width="200px" height="200px">
-                </div>
-            </div>
-            <div class="box ">
-                <div class="box1" >
-                    <figure>
-                        <img class="img1" src="17kohli1.jpg">
-                        <figcaption>
-                            <h2>About</h2>
-                            <span><b>Born:-</b></span> born on 5 November 1988 in Delhi to a Punjabi Hindu family
-                            <br><span><b>spouse and children:-</b></span> Anushka sharma & Daughter Vamika <br>
-                            <span><b>Parent(s):-</b></span> Prem Kohli-Saroj Kohli
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="box2">
-                    <figure>
-                        <img class="img2" src="National-Records-min.jpg">
-                        <figcaption>
-                            <h2>Records</h2> 
-                            <b>KING OF RECORDS</b>
-                            Kohli has made 75 centuries and 7 double centuries in international cricket—28 centuries, 7 double centuries in Test cricket, 46 centuries in One Day Internationals (ODIs), and 1 century in T20I.
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="box3">
-                    <figure>
-                    <img class="img3" src="awards and honors.png">
-                    <figcaption>
-                            <h2>Awards & Honours</h2>
-                            2013 -Arjuna Award, second highest sporting honour<br> 
-                            Sir Garfield Sobers Trophy (ICC Men's Cricketer of the Decade): 2011–2020<br>
-                            Delhi & District Cricket Association (DDCA) renamed a stand after Kohli at Feroz Shah Kotla, Delhi <br>
-                    </figcaption>
-                    </figure>
-                </div>
-            </div>
-            <div class="content">
-                <div class="cont-main">
-                    <h2>HERE IS WHAT WE NEED TO KNOW ABOUT KING KOHLI</h2>
-                </div>
-                <div class="cont-sub-main">
-                    <ul>
-                        <li>Test records: Most Wins as captain of India, with 40 wins out of 68 matches,Four Test double-hundreds in four consecutive series.</li>
-                        <li>Kohli's junior cricket career kicked off in October 2002 at the Luhnu cricket ground in a Polly Umrigar match against the host state of Himachal Pradesh.</li>
-                        <li>Kohli assumed the captaincy of the Indian squad that went on to triumph at the 2008 Under-19 Cricket World Cup held in Malaysia.</li>
-                        <li>In August 2008, Kohli was selected for inclusion in the ODl squad for the tour of Sri Lanka and the Champions Trophy in Pakistan.</li>
-                        <li>Kohli was given the opportunity in tri-nation ODI tournament in BangladeshDuring the series, Kohli became just the third Indian player to score two ODI centuries before the age of 22.</li>
-                        <li>"He is a very physical type of player. He likes to impose himself on the game, backs it up with his skill."– Team India's coach Dav Whatmore at the 2008 Under-19 World Cup on Kohli,.</li>
-                        <li>In April 2019, he was named the captain of India's squad for the 2019 Cricket World Cup.</li> 
-                        <li>In September 2021, Kohli was named as the captain of India's squad for the 2021 ICC Men's T20 World Cup. However, Kohli also publicly announced his decision to step down from the role of T20I captain following the tournament's conclusion.</li>
-                        <li>Kohli has often expressed his admiration for the cover drive, which he considers to be his signature stroke. He possesses a natural aptitude for the flick shot</li>
-                        <li>If you have time, you should read more about this incredible human being on his Wikipedia entry.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer">
-                <div class="nav-bar">
-                    <div class="nav-item">About</div>
-                    <div class="nav-item">Records</div>
-                    <div class="nav-item">Wikipedia</div>
-                    <div class="nav-item">Awards&Honours</div>
-                </div>
-                <div class="image">
-                    <img src="trib.jpg">
-                </div>
-            </div>
-        </div>
-    </div>
+<body background="istockphoto-116772376-612x612.jpg" >
+	<header>
+        <section class="h1">
+		<div class="rotate">
+			<h1> My Todo List</h1>
+		</div>
+		<form id="new-task-form">
+			<input 
+				type="text" 
+				name="new-task-input" 
+       			id="new-task-input" 
+				placeholder="What's Your Plan ?" />
+			<input 
+				type="submit"
+				id="new-task-submit" 
+				value="ADD" />   
+		</form>
+    </section> 
+	</header>
+	<hr>
+	<main>
+		<section class="task-list">
+        <section class="h2">
+			<h2>Tasks :-</h2>
+            <div id="tasks">
+
+			</div>
+        </section>
+		</section>
+	</main>
+
+	<script src="todo.js"></script>
 </body>
 </html>
